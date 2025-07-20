@@ -11,15 +11,21 @@ function clearDisplay(){
 
 function calculate(){
     try{
+        
         equation = display.value 
         total = eval(equation);
-        display.value = total;
+
+        
+         display.value = total.toFixed(3);
+            
+
+        
     }
     catch(error){
         display.value = "Error"
 
     }
-
+    
+}
     
 
-}
