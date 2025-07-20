@@ -14,12 +14,8 @@ function calculate(){
         
         equation = display.value 
         total = eval(equation);
-
-        
-         display.value = total.toFixed(3);
+         display.value = total.toFixed(2);
             
-
-        
     }
     catch(error){
         display.value = "Error"
@@ -27,5 +23,4 @@ function calculate(){
     }
     
 }
-    
 
