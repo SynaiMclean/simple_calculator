@@ -1,4 +1,5 @@
-let display =document.getElementById('display');
+let display = document.getElementById('display');
+let operant = document.getElementById('operant');
 
 function appearInDisplay(value) {
     display.value += value;
@@ -12,16 +13,16 @@ function clearDisplay(){
 function negativeNum(){
     display.value *= -1;
 }
+function makeDecimal(){
+    display.value *= 0.01
     
+}
 
     
 
 function calculate(){
     try{
-        
-        equation = display.value 
-
-         display.value = total.toFixed(2);
+        if()
             
     }
     catch(error){
