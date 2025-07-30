@@ -72,6 +72,8 @@ button:active{
     background-color: hsl(0, 71%, 70%);
 }
 
-#clear{
-    grid-template-columns: 4, ;
+
+#zero{
+    grid-column: span 2;
+    width: 100%;
 }
