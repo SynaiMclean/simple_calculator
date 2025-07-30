@@ -9,11 +9,18 @@ function clearDisplay(){
     display.value = "";
 }
 
+function negativeNum(){
+    display.value *= -1;
+}
+    
+
+    
+
 function calculate(){
     try{
         
         equation = display.value 
-        total = eval(equation);
+
          display.value = total.toFixed(2);
             
     }
