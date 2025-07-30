@@ -58,3 +58,20 @@ button:hover{
 button:active{
     background-color: hsl(0, 0%, 60%);
 }
+
+#operant{
+    background-color: hsl(0, 71%, 50%);
+
+}
+#operant:hover{
+
+    background-color: hsl(0, 71%, 60%);
+
+}
+#operant:active{
+    background-color: hsl(0, 71%, 70%);
+}
+
+#clear{
+    grid-template-columns: 4, ;
+}
