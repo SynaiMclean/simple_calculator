@@ -10,24 +10,29 @@
     <div id="calculator">
         <input id="display" type="text" readonly>
         <div class="button-keys">
+            <button onclick="clearDisplay()" id="clear" id>A/C</button>
+            <button onclick="negativeNum()">+/-</button>
+            <button onclick="negativeNum()">+/-</button>
+            <button onclick="appearInDisplay('*')" id="operant">*</button>
+
             <button onclick="appearInDisplay('7')">7</button>
             <button onclick="appearInDisplay('8')">8</button>
             <button onclick="appearInDisplay('9')">9</button>
-            <button onclick="appearInDisplay('*')" id="operant">*</button>
+            <button onclick="appearInDisplay('/')" id="operant">/</button>
             <button onclick="appearInDisplay('4')">4</button>
             <button onclick="appearInDisplay('5')">5</button>
             <button onclick="appearInDisplay('6')">6</button>
-            <button onclick="appearInDisplay('/')" id="operant">/</button>
+            <button onclick="appearInDisplay('+')" id="operant">+</button>
             <button onclick="appearInDisplay('1')">1</button>
             <button onclick="appearInDisplay('2')">2</button>
             <button onclick="appearInDisplay('3')">3</button>
-            <button onclick="appearInDisplay('+')" id="operant">+</button>
-            <button onclick="appearInDisplay('.')">.</button>
-            <button onclick="appearInDisplay('0')">0</button>
-            <button onclick="calculate()">=</button>
             <button onclick="appearInDisplay('-')"id="operant">-</button>
-            <button onclick="clearDisplay()" id="clear">A/C</button>
-            <button onclick="negativeNum()">+/-</button>
+            
+            <button onclick="appearInDisplay('.')">.</button>
+            <button id="zero" onclick="appearInDisplay('0') ">0</button>
+            
+            
+            <button onclick="calculate()" id="operant">=</button>
             
 
 
