@@ -1,8 +1,19 @@
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 52px;
+    color: white;
+}
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 0.6in;
+  background-color: darkslategray;
 }
 #calculator {
   font-family: Arial, sans-serif;
