@@ -17,48 +17,43 @@ function makeDecimal() {
 }
 
 function calculate() {
-    try{
-        let operator;
-        let expression = display.value;
-        let arr;
+  try {
+    let operator;
+    let expression = display.value;
+    let arr;
 
-        if (expression.includes("+")){
-            operator = "+"
-           arr =  expression.split("+")
-        }
-        else if(expression.includes("-")){
-            operator = "-"
-            arr =  expression.split("-")
-        }
-        else if(expression.includes('*')){
-            operator = "*"
-            arr =  expression.split("*")
-        }
-        else if (expression.includes('/')){
-            operator = "/"
-            arr =  expression.split("/")
-        }
+    if (expression.includes("+")) {
+      operator = "+";
+      arr = expression.split("+");
+    } else if (expression.includes("-")) {
+      operator = "-";
+      arr = expression.split("-");
+    } else if (expression.includes("*")) {
+      operator = "*";
+      arr = expression.split("*");
+    } else if (expression.includes("/")) {
+      operator = "/";
+      arr = expression.split("/");
+    }
 
-        switch (operator) {
-        case "+":
-            display.value = parseFloat(arr[0]) + parseFloat(arr[1]);
-            break;
-        case "-":
-            display.value = parseFloat(arr[0]) - parseFloat(arr[1]);
-             break;
-        case "*":
-            display.value = parseFloat(arr[0]) * parseFloat(arr[1]);
-            break;
-        case "/":
-            display.value = parseFloat(arr[0]) / parseFloat(arr[1]);
-            break;
-            default:
-                display.value = "Try again"
-            break;
-  }
-}
-
-   catch (error) {
+    switch (operator) {
+      case "+":
+        display.value = parseFloat(arr[0]) + parseFloat(arr[1]);
+        break;
+      case "-":
+        display.value = parseFloat(arr[0]) - parseFloat(arr[1]);
+        break;
+      case "*":
+        display.value = parseFloat(arr[0]) * parseFloat(arr[1]);
+        break;
+      case "/":
+        display.value = parseFloat(arr[0]) / parseFloat(arr[1]);
+        break;
+      default:
+        display.value = "Try again";
+        break;
+    }
+  } catch (error) {
     display.value = "Error";
   }
 }
